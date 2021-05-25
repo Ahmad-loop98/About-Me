@@ -1,5 +1,12 @@
 'use strict';
 alert('hello');
+var user = prompt('Hi there, whats your name?');
+
+while (!user) { user = prompt('really whats your name we will need it later') };
+
+alert(' hello ' +  user +  ' and welcome to my page, im going to ask you a questions about me, Are you excited?');
+console.log('user',user);
+
 let favDrink=prompt("do i like tea?");
 console.log('your fav drink'+ favDrink);
 favDrink =favDrink.toLowerCase();
@@ -57,6 +64,46 @@ default:
     alert('you tried in a good way');
 
 }
-let userName=prompt("whats your name?")
-console.log('your name'+userName);
+
 alert(`my dav drink ${avDrink} and my generation${age} and likeable novels ${novels} and lisence${myLisence}and work${myWork} `);
+
+let randomNumber =prompt("guess a random number between 1 and 100") 
+console.log('GUESSING A RANDOM NUMBER'+randomNumber);
+for(let i = 0 ; i <= 200 ; ++i){
+    if(randomNumber>=1 && randomNumber<=10){
+        randomNumber=Number(randomNumber);
+        console.log('it is low' +randomNumber);   
+    }
+        console.log('updated all the time' , i);
+
+         if(randomNumber<=90 && randomNumber<=100) {
+            randomNumber=Number(randomNumber);
+            console.log('it is high'+randomNumber);
+
+
+        }
+        else if(randomNumber===50) {
+            randomNumber=Number(randomNumber);
+          alert('thats correct');
+        }
+        let i=0;
+        while(i<=4){
+
+            console.log('updated all the time' , i);
+
+            i++;
+
+        }
+
+        let cars=prompt('what cars you like ?').toLocaleUpperCase
+        let cararr=['skode','seat','audi'];
+for(let i=0;i<cararr.length;i++){
+    for(let j=0;j<=6;j++){
+        if(i===cararr){
+        console.log('guessed correct' , cararr);
+        else 
+        console.log('you finished 6 attempts');
+    }
+}
+
+
