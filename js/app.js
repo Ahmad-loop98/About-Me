@@ -1,11 +1,12 @@
 'use strict';
+
 alert('hello');
 var user = prompt('Hi there, whats your name?');
 
 while (!user) { user = prompt('really whats your name we will need it later') };
 
 alert(' hello ' +  user +  ' and welcome to my page, im going to ask you a questions about me, Are you excited?');
-console.log('user',user);
+alert('user',user);
 
 let favDrink=prompt("do i like tea?");
 console.log('your fav drink'+ favDrink);
@@ -28,7 +29,7 @@ if(age=='yes'||age=='y'){
 alert('thought you older');
 }
 console.log(' age'+ age);
-let novels=prompt("do you i like novels ?");
+let novels=prompt("do i like novels ?");
 novels=novels.toLocaleUpperCase();
 console.log('novels liked'+ novels);
 if(novels=='yes'||novels=='y'){
@@ -69,12 +70,12 @@ alert(`my dav drink ${avDrink} and my generation${age} and likeable novels ${nov
 
 let randomNumber =prompt("guess a random number between 1 and 100") 
 console.log('GUESSING A RANDOM NUMBER'+randomNumber);
-for(let i = 0 ; i <= 200 ; ++i){
+for(let i = 0 ; i < 6 ; ++i){
     if(randomNumber>=1 && randomNumber<=10){
         randomNumber=Number(randomNumber);
-        console.log('it is low' +randomNumber);   
+        alert('it is low' +randomNumber);   
     }
-        console.log('updated all the time' , i);
+        alert('updated all the time' , i);
 
          if(randomNumber<=90 && randomNumber<=100) {
             randomNumber=Number(randomNumber);
@@ -95,15 +96,24 @@ for(let i = 0 ; i <= 200 ; ++i){
 
         }
 
+        function car(){
+
+           
+            let cararr=['skode','seat','audi'];
+    for(let i=0;i<6;i++){
         let cars=prompt('what cars you like ?').toLocaleUpperCase
-        let cararr=['skode','seat','audi'];
-for(let i=0;i<cararr.length;i++){
-    for(let j=0;j<=6;j++){
-        if(i===cararr){
-        console.log('guessed correct' , cararr);
-        else 
-        console.log('you finished 6 attempts');
+        for(let j=0;j<=cararr.length;j++){
+            if(cararr[j]===cars){
+            alert('yes it is');
+        }
+            else if(cararr[j]!=cars) {
+                alert('not of my fav car');
+            break;
+        }
+        }
     }
-}
+
+    car();
+    
 
 

@@ -3,19 +3,19 @@ p {
     color: cornsilk;
 }
 h1{
-    background-color: darkblue;
+    background-color: yellowgreen;
     padding-left: 5px;
     padding-right: 5px;
 }
 
 ol {
-color: blueviolet;
+color: mediumblue;
 align-content: center;
 font-family: sans-serif;
 font-size: medium;
 }
 ul{
-    color: darkmagenta;
+    color: burlywood;
     align-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: medium;
@@ -24,5 +24,14 @@ body{
     background-color: rgb(133, 180, 80);
     backface-visibility: inherit;
    
+
+}
+body footer{
+    background-image: url(https://unsplash.com/photos/5fNmWej4tAA);
+    background-repeat: no-repeat;
+
+}
+div{
+    background-color: black;
 
 }
